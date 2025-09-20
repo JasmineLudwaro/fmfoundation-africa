@@ -6,6 +6,7 @@ import { BookOpen, Building, Droplets } from "lucide-react";
 import educationImage from "@/assets/education-students.jpg";
 import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
+import waterTowerSolarImage from "@/assets/water-tower-solar.jpg";
 
 const OurWork = () => {
   const focusAreas = [
@@ -39,7 +40,7 @@ const OurWork = () => {
       icon: Droplets,
       title: "Water & Environment",
       description: "Implementing sustainable water solutions through borehole drilling, tree planting initiatives, and comprehensive clean water programs.",
-      image: waterImage,
+      image: waterTowerSolarImage,
       features: [
         "Borehole drilling and maintenance",
         "Tree planting campaigns",
@@ -112,9 +113,14 @@ const OurWork = () => {
                   <Card className="overflow-hidden shadow-card hover:shadow-primary transition-all duration-300">
                     <img
                       src={area.image}
-                      alt={area.title}
+                      alt={area.title === "Water & Environment" ? "Water tower with solar installation supporting clean water access" : area.title}
                       className="w-full h-80 object-cover"
                     />
+                    {area.title === "Water & Environment" && (
+                      <CardContent className="p-4">
+                        <p className="text-sm text-muted-foreground text-center">Sustainable water and solar projects in our communities</p>
+                      </CardContent>
+                    )}
                   </Card>
                 </div>
               </div>

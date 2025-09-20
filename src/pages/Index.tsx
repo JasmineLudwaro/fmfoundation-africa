@@ -8,6 +8,7 @@ import heroImage from "@/assets/hero-community.jpg";
 import educationImage from "@/assets/education-students.jpg";
 import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
+import waterSolarImage from "@/assets/water-solar-infrastructure.jpg";
 
 const Index = () => {
   const focusAreas = [
@@ -63,10 +64,10 @@ const Index = () => {
             <Button size="lg" variant="secondary" className="shadow-glow">
               <Link to="/about">About Us</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
               <Link to="/our-work">Our Work</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-glow">
               <Link to="/contact">Contact</Link>
             </Button>
             <Button size="lg" className="bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground shadow-glow">
@@ -117,6 +118,21 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Impact</h2>
             <p className="text-xl text-muted-foreground">Measuring the difference we make in communities</p>
           </div>
+          
+          {/* Featured Project Image */}
+          <div className="mb-12">
+            <Card className="overflow-hidden shadow-card">
+              <img
+                src={waterSolarImage}
+                alt="Community water and solar infrastructure project"
+                className="w-full h-64 md:h-80 object-cover"
+              />
+              <CardContent className="p-6 text-center">
+                <p className="text-lg text-muted-foreground">Sustainable water and solar projects in our communities</p>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {impactStats.map((stat, index) => (
               <Card key={stat.label} className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
