@@ -62,19 +62,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
             <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
-              <Link to="/about">About Us</Link>
-            </Button>
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
-              <Link to="/our-work">Our Work</Link>
-            </Button>
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
               <Link to="/contact">Contact</Link>
-            </Button>
-            <Button size="lg" className="bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground shadow-glow">
-              <Link to="/get-involved">Get Involved</Link>
-            </Button>
-            <Button size="lg" className="bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground shadow-glow">
-              <Link to="/get-involved">Donate Now</Link>
             </Button>
           </div>
         </div>
