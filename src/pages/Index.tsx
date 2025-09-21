@@ -61,14 +61,17 @@ const Index = () => {
             Building resilient communities through sustainable development, education, and environmental conservation across Kenya.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-            <Button size="lg" variant="secondary" className="shadow-glow">
+            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
               <Link to="/about">About Us</Link>
             </Button>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
+            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
               <Link to="/our-work">Our Work</Link>
             </Button>
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-glow">
+            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
               <Link to="/contact">Contact</Link>
+            </Button>
+            <Button size="lg" className="bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground shadow-glow">
+              <Link to="/get-involved">Get Involved</Link>
             </Button>
             <Button size="lg" className="bg-tertiary hover:bg-tertiary/90 text-tertiary-foreground shadow-glow">
               <Link to="/get-involved">Donate Now</Link>
@@ -162,7 +165,7 @@ const Index = () => {
             <Button size="lg" variant="secondary" className="shadow-glow">
               <Link to="/get-involved">Get Involved</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" className="bg-background text-primary border border-primary">
               <Link to="/impact">View Our Impact</Link>
             </Button>
           </div>
