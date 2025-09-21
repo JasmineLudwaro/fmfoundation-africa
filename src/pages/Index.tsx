@@ -61,6 +61,12 @@ const Index = () => {
             Building resilient communities through sustainable development, education, and environmental conservation across Kenya.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
+            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+              <Link to="/about">About Us</Link>
+            </Button>
+            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+              <Link to="/our-work">Our Work</Link>
+            </Button>
             <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
               <Link to="/contact">Contact</Link>
             </Button>
