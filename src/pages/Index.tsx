@@ -68,6 +68,55 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Mission & Vision Section */}
+      <section className="py-16 bg-gradient-warm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Vision & Mission</h2>
+            <p className="text-xl text-muted-foreground">Our guiding principles for community transformation</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {/* Vision */}
+            <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  A transformed society where communities thrive through access to clean water, quality education, 
+                  sustainable development, environmental conservation, and opportunities that promote shared prosperity for all.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Mission */}
+            <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="h-8 w-8 text-secondary-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  To empower communities by providing sustainable water solutions, supporting educational initiatives, 
+                  and fostering development programs that build resilient and equitable societies.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          {/* Navigation Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+              <Link to="/about">About Us</Link>
+            </Button>
+            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+              <Link to="/our-work">Our Work</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Focus Areas */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
