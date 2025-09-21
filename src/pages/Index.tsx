@@ -153,7 +153,7 @@ const Index = () => {
             <Button size="lg" variant="secondary" className="shadow-glow">
               <Link to="/get-involved">Get Involved</Link>
             </Button>
-            <Button size="lg" className="bg-background text-primary border border-primary">
+            <Button size="lg" className="bg-primary text-primary-foreground">
               <Link to="/impact">View Our Impact</Link>
             </Button>
           </div>
