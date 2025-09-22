@@ -110,16 +110,6 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-          
-          {/* Navigation Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
-              <Link to="/about">About Us</Link>
-            </Button>
-            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
-              <Link to="/our-work">Our Work</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
