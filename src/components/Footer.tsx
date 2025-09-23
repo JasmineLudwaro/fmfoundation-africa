@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import logoImage from "@/assets/fm-foundation-logo.jpg";
 
 const Footer = () => {
   return (
@@ -8,10 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Organization Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary-foreground/20 rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">F</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logoImage} 
+                alt="FM Foundation Logo" 
+                className="h-14 w-auto"
+              />
               <div>
                 <h3 className="font-bold text-lg">FMF Foundation</h3>
                 <p className="text-sm text-primary-foreground/80">Fednarnd Mlati Foundation</p>
