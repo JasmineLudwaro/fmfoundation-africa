@@ -51,25 +51,32 @@ const Index = () => {
             className="w-full h-full object-cover opacity-20"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
-            Empowering Minds,
-            <br />
-            <span className="text-primary-glow">Enriching Communities</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in">
-            Building resilient communities through sustainable development, education, and environmental conservation across Kenya.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
-              <Link to="/about">About Us</Link>
-            </Button>
-            <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
-              <Link to="/our-work">Our Work</Link>
-            </Button>
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
-              <Link to="/contact">Contact</Link>
-            </Button>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-right mb-4">
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-medium animate-fade-in">
+              Fednarnd Mlati Foundation
+            </p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
+              Empowering Minds,
+              <br />
+              <span className="text-primary-glow">Enriching Communities</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in">
+              Building resilient communities through sustainable development, education, and environmental conservation across Kenya.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
+              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+                <Link to="/about">About Us</Link>
+              </Button>
+              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+                <Link to="/our-work">Our Work</Link>
+              </Button>
+              <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
+                <Link to="/contact">Contact</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
