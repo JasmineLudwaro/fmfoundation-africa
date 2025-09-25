@@ -53,12 +53,13 @@ const Index = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="absolute top-4 left-4">
+          <div className="absolute top-2 left-4 flex items-center space-x-3">
             <img
               src={logo}
               alt="Fednarnd Mlati Foundation Logo"
               className="h-12 w-12 md:h-16 md:w-16 object-contain"
             />
+            <span className="font-bold text-lg md:text-xl text-primary-foreground">FM Foundation</span>
           </div>
           <div className="text-center mb-4">
             <p className="text-lg md:text-xl text-primary-foreground/90 font-medium animate-fade-in">
