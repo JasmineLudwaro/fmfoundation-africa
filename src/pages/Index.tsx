@@ -9,6 +9,7 @@ import educationImage from "@/assets/education-students.jpg";
 import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
 import waterSolarImage from "@/assets/water-solar-infrastructure.jpg";
+import logo from "@/assets/fm-foundation-logo.jpg";
 
 const Index = () => {
   const focusAreas = [
@@ -33,9 +34,9 @@ const Index = () => {
   ];
 
   const impactStats = [
-    { icon: Users, number: "50+", label: "Communities Served" },
-    { icon: Droplets, number: "25", label: "Boreholes Drilled" },
-    { icon: GraduationCap, number: "500+", label: "Students Supported" },
+    { icon: Users, number: "400+", label: "Household Reach" },
+    { icon: Droplets, number: "3", label: "Boreholes Drilled" },
+    { icon: GraduationCap, number: "300+", label: "Students Supported" },
   ];
 
   return (
@@ -52,7 +53,14 @@ const Index = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-right mb-4">
+          <div className="absolute top-4 left-4">
+            <img
+              src={logo}
+              alt="Fednarnd Mlati Foundation Logo"
+              className="h-20 w-20 md:h-24 md:w-24 object-contain"
+            />
+          </div>
+          <div className="text-center mb-4">
             <p className="text-lg md:text-xl text-primary-foreground/90 font-medium animate-fade-in">
               Fednarnd Mlati Foundation
             </p>

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logoImage from "@/assets/fm-foundation-logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src={logoImage} 
-              alt="FM Foundation Logo" 
-              className="h-16 w-auto"
-            />
+            <span className="font-bold text-xl text-primary">FM Foundation</span>
           </Link>
 
           {/* Desktop Navigation */}
