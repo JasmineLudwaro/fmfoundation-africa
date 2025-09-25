@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ArrowRight, Users, Droplets, TreePine, GraduationCap, Building2, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-community.jpg";
+import heroImage from "@/assets/hero-animated-background.jpg";
 import educationImage from "@/assets/education-students.jpg";
 import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
@@ -44,14 +44,15 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-hero min-h-[80vh] flex items-center">
-        <div className="absolute inset-0">
+      <section className="relative bg-gradient-hero min-h-[80vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 animate-pulse-slow">
           <img
             src={heroImage}
-            alt="Community empowerment"
-            className="w-full h-full object-cover opacity-20"
+            alt="Modern tech background"
+            className="w-full h-full object-cover opacity-30 animate-float"
           />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 animate-gradient-shift"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="absolute top-2 left-4">
             <img
