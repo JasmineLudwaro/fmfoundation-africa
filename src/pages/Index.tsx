@@ -9,7 +9,7 @@ import educationImage from "@/assets/education-students.jpg";
 import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
 import waterSolarImage from "@/assets/water-solar-infrastructure.jpg";
-import logo from "@/assets/fm-foundation-logo.jpg";
+import logo from "@/assets/fm-foundation-logo-optimized.png";
 
 const Index = () => {
   const focusAreas = [
@@ -58,7 +58,7 @@ const Index = () => {
             <img
               src={logo}
               alt="Fednarnd Mlati Foundation Logo"
-              className="h-12 w-12 md:h-16 md:w-16 object-contain"
+              className="h-[35px] md:h-[60px] w-auto object-contain"
             />
           </div>
           <div className="text-center mb-4">
