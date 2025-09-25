@@ -57,7 +57,7 @@ const Index = () => {
             <img
               src={logo}
               alt="Fednarnd Mlati Foundation Logo"
-              className="h-20 w-20 md:h-24 md:w-24 object-contain"
+              className="h-12 w-12 md:h-16 md:w-16 object-contain"
             />
           </div>
           <div className="text-center mb-4">
