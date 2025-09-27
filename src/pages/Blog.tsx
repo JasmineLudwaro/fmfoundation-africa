@@ -7,62 +7,17 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 const Blog = () => {
   const articles = [
     {
-      title: "Launching Our Tree Planting Campaign",
-      excerpt: "Join us in our ambitious goal to plant 50,000 trees across Kenya in 2024. Learn about our environmental conservation strategy and how communities are leading the charge.",
-      author: "Dr. Sarah Kimani",
-      date: "2024-03-15",
-      readTime: "5 min read",
-      category: "Environment",
-      featured: true
-    },
-    {
-      title: "New Borehole Project in Rural Kenya",
-      excerpt: "Breaking ground on our latest water access project in Machakos County. This initiative will provide clean water to over 3,000 community members.",
-      author: "James Mutua",
-      date: "2024-03-08",
-      readTime: "3 min read",
+      title: "Bringing Water Closer to the Community in Taveta",
+      excerpt: "In partnership with Davis & Shirtliff CSR and Isuzu East Africa, we have continued to take practical steps towards improving access to clean and reliable water in Taveta Sub-County. Through this collaboration, existing boreholes have been fitted with solar technology to make water pumping more sustainable and affordable. We also drilled a new borehole with a capacity of 60,000 litres, which will serve Kiwalwa Primary and Secondary Schools as well as the wider community. For the schools, this means a steady supply of safe water for learners and teachers, reducing the challenges that come with water scarcity. For the surrounding community, it is an opportunity to access free and clean water closer to home, supporting better health, livelihoods, and dignity. Speaking about the project, Fednarnd Chikira, Founder of Fednarnd Mlati Foundation, said: 'Access to clean water is a basic need, and by working together with committed partners, we are making it a reality for learners and families in Taveta. This project is more than just about water; it is about giving children the chance to focus on their education and helping the community live with dignity and hope.' This collaboration is a testament to what can be achieved when private sector partners join hands with community-focused organizations to deliver sustainable solutions that transform lives.",
+      author: "Fednarnd Chikira",
+      date: "2024-09-20",
+      readTime: "4 min read",
       category: "Water & Sanitation",
-      featured: false
-    },
-    {
-      title: "Celebrating Educational Milestones",
-      excerpt: "Recognizing the achievements of our scholarship recipients and the impact of our educational support programs across 15 schools in Nairobi and surrounding areas.",
-      author: "Grace Wanjiru",
-      date: "2024-02-28",
-      readTime: "4 min read",
-      category: "Education",
-      featured: false
-    },
-    {
-      title: "Community-Led Development: A Success Story",
-      excerpt: "How the people of Kiambu County took ownership of their development projects and achieved remarkable results through local leadership and partnership.",
-      author: "Peter Ochieng",
-      date: "2024-02-20",
-      readTime: "6 min read",
-      category: "Community Development",
-      featured: false
-    },
-    {
-      title: "Partnership Spotlight: Working with Local Organizations",
-      excerpt: "Exploring our collaborative approach to community development and how partnerships with local organizations amplify our impact.",
-      author: "Mary Njoki",
-      date: "2024-02-15",
-      readTime: "4 min read",
-      category: "Partnerships",
-      featured: false
-    },
-    {
-      title: "SDG Progress Report: Our 2023 Impact",
-      excerpt: "A comprehensive look at our progress toward achieving the UN Sustainable Development Goals and the measurable impact we've made in communities.",
-      author: "FMF Research Team",
-      date: "2024-01-30",
-      readTime: "8 min read",
-      category: "Impact & Research",
-      featured: false
+      featured: true
     }
   ];
 
-  const categories = ["All", "Environment", "Water & Sanitation", "Education", "Community Development", "Partnerships", "Impact & Research"];
+  const categories = ["All", "Water & Sanitation"];
 
   return (
     <div className="min-h-screen bg-background">
@@ -135,43 +90,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* All Articles */}
-      <section className="py-16 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Recent Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles
-              .filter(article => !article.featured)
-              .map((article, index) => (
-                <Card key={article.title} className="shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-medium">
-                        {article.category}
-                      </span>
-                      <span className="text-xs text-muted-foreground">{article.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2">{article.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">{article.excerpt}</p>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2 text-xs text-muted-foreground">
-                        <User size={12} />
-                        <span>{article.author}</span>
-                        <span>•</span>
-                        <span>{new Date(article.date).toLocaleDateString()}</span>
-                      </div>
-                      <Button variant="ghost" size="sm" className="text-primary hover:text-primary">
-                        Read More
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-          </div>
-        </div>
-      </section>
 
       {/* Newsletter Signup */}
       <section className="py-16">
