@@ -90,25 +90,27 @@ const Footer = () => {
         </div>
 
         {/* Partners Section */}
-        <div className="mt-8 pt-8 border-t border-primary-foreground/20">
-          <div className="text-center mb-6">
-            <h4 className="font-semibold text-lg text-primary-foreground mb-4">Our Partners</h4>
-            <div className="flex justify-center items-center space-x-8">
-              <img 
-                src={isuzuLogo} 
-                alt="Isuzu East Africa" 
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
-              <img 
-                src={davisShirtliffLogo} 
-                alt="Davis & Shirtliff" 
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
+        <div className="mt-6 pt-6 border-t border-primary-foreground/20">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <h4 className="font-medium text-primary-foreground text-sm">Our Partners:</h4>
+              <div className="flex items-center space-x-4">
+                <img 
+                  src={isuzuLogo} 
+                  alt="Isuzu East Africa" 
+                  className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
+                <img 
+                  src={davisShirtliffLogo} 
+                  alt="Davis & Shirtliff" 
+                  className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-primary-foreground/20">
+        <div className="mt-6 pt-6 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-primary-foreground/60">
               © 2024 Fednarnd Mlati Foundation. All rights reserved.

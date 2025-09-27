@@ -118,25 +118,6 @@ const Impact = () => {
       </section>
 
 
-      {/* Call to Action */}
-      <section className="py-16 bg-gradient-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-            Be Part of Our Growing Impact
-          </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8">
-            Together, we can reach even more communities and create lasting change across Kenya and beyond.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary-foreground text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors shadow-glow">
-              Join Our Mission
-            </button>
-            <button className="border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary-foreground hover:text-primary transition-colors">
-              View Projects
-            </button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
