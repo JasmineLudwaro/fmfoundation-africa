@@ -8,39 +8,27 @@ const Impact = () => {
   const impactStats = [
     {
       icon: Users,
-      number: "50+",
-      label: "Communities Served",
+      number: "400+",
+      label: "Household Reach",
       description: "Direct impact across rural and urban communities in Kenya"
     },
     {
       icon: Droplets,
-      number: "25",
+      number: "3",
       label: "Boreholes Drilled",
       description: "Providing clean water access to thousands of community members"
     },
     {
       icon: GraduationCap,
-      number: "500+",
+      number: "300+",
       label: "Students Supported",
       description: "Educational scholarships and learning resource provision"
     },
     {
-      icon: TreePine,
-      number: "10,000+",
-      label: "Trees Planted",
-      description: "Contributing to environmental conservation and climate action"
-    },
-    {
       icon: Building2,
-      number: "15",
+      number: "0",
       label: "Infrastructure Projects",
       description: "Schools, halls, and community facilities constructed"
-    },
-    {
-      icon: Heart,
-      number: "1,000+",
-      label: "Lives Transformed",
-      description: "Direct beneficiaries of our comprehensive programs"
     }
   ];
 

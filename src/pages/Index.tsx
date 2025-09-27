@@ -54,13 +54,6 @@ const Index = () => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 animate-gradient-shift"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="absolute top-2 left-4">
-            <img
-              src={logo}
-              alt="Fednarnd Mlati Foundation Logo"
-              className="h-[35px] md:h-[60px] w-auto object-contain"
-            />
-          </div>
           <div className="text-center mb-4">
             <p className="text-lg md:text-xl text-primary-foreground/90 font-medium animate-fade-in">
               Fednarnd Mlati Foundation

@@ -24,7 +24,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            {/* Logo area - keeping space for layout */}
+            <img
+              src="/src/assets/fm-foundation-logo-optimized.png"
+              alt="Fednarnd Mlati Foundation Logo"
+              className="h-[35px] md:h-[60px] w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
