@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import logoImage from "@/assets/fm-foundation-logo.jpg";
+import isuzuLogo from "@/assets/isuzu-logo.png";
+import davisShirtliffLogo from "@/assets/davis-shirtliff-logo.png";
 
 const Footer = () => {
   return (
@@ -84,6 +86,25 @@ const Footer = () => {
             <p className="text-xs text-primary-foreground/60">
               Stay connected for updates on our latest projects and impact stories.
             </p>
+          </div>
+        </div>
+
+        {/* Partners Section */}
+        <div className="mt-8 pt-8 border-t border-primary-foreground/20">
+          <div className="text-center mb-6">
+            <h4 className="font-semibold text-lg text-primary-foreground mb-4">Our Partners</h4>
+            <div className="flex justify-center items-center space-x-8">
+              <img 
+                src={isuzuLogo} 
+                alt="Isuzu East Africa" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+              <img 
+                src={davisShirtliffLogo} 
+                alt="Davis & Shirtliff" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
           </div>
         </div>
 
