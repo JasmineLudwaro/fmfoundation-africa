@@ -8,7 +8,23 @@ const Blog = () => {
   const articles = [
     {
       title: "Bringing Water Closer to the Community in Taveta",
-      excerpt: "In partnership with Davis & Shirtliff CSR and Isuzu East Africa, we have continued to take practical steps towards improving access to clean and reliable water in Taveta Sub-County. Through this collaboration, existing boreholes have been fitted with solar technology to make water pumping more sustainable and affordable. We also drilled a new borehole with a capacity of 60,000 litres, which will serve Kiwalwa Primary and Secondary Schools as well as the wider community. For the schools, this means a steady supply of safe water for learners and teachers, reducing the challenges that come with water scarcity. For the surrounding community, it is an opportunity to access free and clean water closer to home, supporting better health, livelihoods, and dignity. Speaking about the project, Fednarnd Chikira, Founder of Fednarnd Mlati Foundation, said: 'Access to clean water is a basic need, and by working together with committed partners, we are making it a reality for learners and families in Taveta. This project is more than just about water; it is about giving children the chance to focus on their education and helping the community live with dignity and hope.' This collaboration is a testament to what can be achieved when private sector partners join hands with community-focused organizations to deliver sustainable solutions that transform lives.",
+      excerpt: (
+        <div className="space-y-4">
+          <p>In partnership with Davis & Shirtliff CSR and Isuzu East Africa, we have continued to take practical steps towards improving access to clean and reliable water in Taveta Sub-County.</p>
+          
+          <p>Through this collaboration, existing boreholes have been fitted with solar technology to make water pumping more sustainable and affordable. We also drilled a new borehole with a capacity of 60,000 litres, which will serve Kiwalwa Primary and Secondary Schools as well as the wider community.</p>
+          
+          <p>For the schools, this means a steady supply of safe water for learners and teachers, reducing the challenges that come with water scarcity. For the surrounding community, it is an opportunity to access free and clean water closer to home, supporting better health, livelihoods, and dignity.</p>
+          
+          <p>Speaking about the project, Fednarnd Chikira, Founder of Fednarnd Mlati Foundation, said:</p>
+          
+          <p className="font-bold italic text-primary">
+            "Access to clean water is a basic need, and by working together with committed partners, we are making it a reality for learners and families in Taveta. This project is more than just about water; it is about giving children the chance to focus on their education and helping the community live with dignity and hope."
+          </p>
+          
+          <p className="font-bold italic">This collaboration is a testament to what can be achieved when private sector partners join hands with community-focused organizations to deliver sustainable solutions that transform lives.</p>
+        </div>
+      ),
       author: "Fednarnd Chikira",
       date: "2024-09-20",
       readTime: "4 min read",
@@ -77,7 +93,7 @@ const Blog = () => {
                     <span>{article.readTime}</span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{article.title}</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">{article.excerpt}</p>
+                  <div className="text-lg text-muted-foreground leading-relaxed">{article.excerpt}</div>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <Button variant="default" className="bg-gradient-primary shadow-primary">
