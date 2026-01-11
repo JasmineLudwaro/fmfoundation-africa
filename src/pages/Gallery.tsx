@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import communityWaterAccess from "@/assets/community-water-access.jpg";
 import galleryTreePlanting from "@/assets/gallery-tree-planting-event.jpg";
 import gallerySolarInfra from "@/assets/gallery-water-solar-infrastructure.jpg";
 import galleryReliefSupplies from "@/assets/gallery-relief-supplies.jpg";
@@ -13,11 +12,6 @@ const Gallery = () => {
     {
       src: galleryWaterCelebration,
       alt: "Community celebrating clean water access",
-      category: "Water & Environment",
-    },
-    {
-      src: communityWaterAccess,
-      alt: "Community members accessing clean water from borehole",
       category: "Water & Environment",
     },
     {
