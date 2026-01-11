@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
+import fmFoundationLogo from "@/assets/fm-foundation-logo-optimized.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -25,7 +25,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img
-              src="/src/assets/fm-foundation-logo-optimized.png"
+              src={fmFoundationLogo}
               alt="Fednarnd Mlati Foundation Logo"
               className="h-[35px] md:h-[60px] w-auto object-contain"
             />
