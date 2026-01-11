@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Users, Droplets, TreePine, GraduationCap, Building2, Heart } from "lucide-react";
 import heroImage from "@/assets/hero-animated-background.jpg";
 import educationImage from "@/assets/education-students.jpg";
-import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
 import waterSolarImage from "@/assets/water-solar-infrastructure.jpg";
+import communityWaterAccess from "@/assets/community-water-access.jpg";
 import logo from "@/assets/fm-foundation-logo-optimized.png";
 
 const Index = () => {
@@ -29,7 +29,7 @@ const Index = () => {
       icon: Droplets,
       title: "Water & Environment",
       description: "Boreholes, tree planting, and clean water initiatives",
-      image: waterImage,
+      image: communityWaterAccess,
     },
   ];
 
