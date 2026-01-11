@@ -4,9 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Building, Droplets } from "lucide-react";
 import educationImage from "@/assets/education-students.jpg";
-import waterImage from "@/assets/water-borehole.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
-import waterTowerSolarImage from "@/assets/water-tower-solar.jpg";
+import communityWaterAccess from "@/assets/community-water-access.jpg";
 
 const OurWork = () => {
   const focusAreas = [
@@ -40,7 +39,7 @@ const OurWork = () => {
       icon: Droplets,
       title: "Water & Environment",
       description: "Implementing sustainable water solutions through borehole drilling, tree planting initiatives, and comprehensive clean water programs.",
-      image: waterTowerSolarImage,
+      image: communityWaterAccess,
       features: [
         "Borehole drilling and maintenance",
         "Tree planting campaigns",
