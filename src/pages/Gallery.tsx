@@ -1,11 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import educationImage from "@/assets/education-students.jpg";
-import waterBoreholeImage from "@/assets/water-borehole.jpg";
-import treePlantingImage from "@/assets/tree-planting.jpg";
-import waterSolarImage from "@/assets/water-solar-infrastructure.jpg";
-import waterTowerSolarImage from "@/assets/water-tower-solar.jpg";
-import heroCommunityImage from "@/assets/hero-community.jpg";
 import communityWaterAccess from "@/assets/community-water-access.jpg";
 import galleryTreePlanting from "@/assets/gallery-tree-planting-event.jpg";
 import gallerySolarInfra from "@/assets/gallery-water-solar-infrastructure.jpg";
@@ -50,36 +44,6 @@ const Gallery = () => {
       src: galleryReliefSupplies,
       alt: "Relief supplies ready for community distribution",
       category: "Community Support",
-    },
-    {
-      src: educationImage,
-      alt: "Students in classroom receiving educational support",
-      category: "Education",
-    },
-    {
-      src: waterBoreholeImage,
-      alt: "Borehole drilling project providing clean water",
-      category: "Water & Environment",
-    },
-    {
-      src: treePlantingImage,
-      alt: "Environmental conservation tree planting",
-      category: "Environment",
-    },
-    {
-      src: waterSolarImage,
-      alt: "Solar-powered water infrastructure installation",
-      category: "Water & Environment",
-    },
-    {
-      src: waterTowerSolarImage,
-      alt: "Water tower with solar installation",
-      category: "Water & Environment",
-    },
-    {
-      src: heroCommunityImage,
-      alt: "Community development activities",
-      category: "Community Development",
     },
   ];
 
