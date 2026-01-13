@@ -96,9 +96,6 @@ const About = () => {
             {/* Integrity */}
             <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-primary">
               <CardContent className="p-8">
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">🎯</span>
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Integrity</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We uphold transparency and accountability in all our initiatives.
@@ -109,9 +106,6 @@ const About = () => {
             {/* Sustainability */}
             <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-secondary">
               <CardContent className="p-8">
-                <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">🌱</span>
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Sustainability</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We design and implement projects that ensure long-term community impact.
@@ -122,9 +116,6 @@ const About = () => {
             {/* Empowerment */}
             <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-tertiary">
               <CardContent className="p-8">
-                <div className="w-14 h-14 bg-tertiary/10 rounded-xl flex items-center justify-center mb-6">
-                  <span className="text-3xl">💪</span>
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Empowerment</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We strengthen individuals and communities to be self-reliant and resilient.
