@@ -104,8 +104,34 @@ export default {
           "50%": { opacity: "0.4" }
         },
         "gradient-shift": {
-          "0%, 100%": { transform: "translateX(-50%) rotate(0deg)" },
-          "50%": { transform: "translateX(50%) rotate(180deg)" }
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" }
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" }
+        },
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.6", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.05)" }
+        },
+        "float-orb": {
+          "0%, 100%": { transform: "translateY(0) translateX(0)" },
+          "25%": { transform: "translateY(-20px) translateX(10px)" },
+          "50%": { transform: "translateY(-10px) translateX(-10px)" },
+          "75%": { transform: "translateY(-25px) translateX(5px)" }
+        },
+        "float-orb-reverse": {
+          "0%, 100%": { transform: "translateY(0) translateX(0)" },
+          "25%": { transform: "translateY(15px) translateX(-15px)" },
+          "50%": { transform: "translateY(5px) translateX(20px)" },
+          "75%": { transform: "translateY(20px) translateX(-10px)" }
+        },
+        "particle-drift": {
+          "0%": { transform: "translateY(100vh) rotate(0deg)", opacity: "0" },
+          "10%": { opacity: "1" },
+          "90%": { opacity: "1" },
+          "100%": { transform: "translateY(-100vh) rotate(720deg)", opacity: "0" }
         }
       },
       animation: {
@@ -115,7 +141,12 @@ export default {
         "scale-in": "scale-in 0.3s ease-out",
         "float": "float 8s ease-in-out infinite",
         "pulse-slow": "pulse-slow 6s ease-in-out infinite",
-        "gradient-shift": "gradient-shift 12s ease-in-out infinite",
+        "gradient-shift": "gradient-shift 15s ease infinite",
+        "shimmer": "shimmer 3s linear infinite",
+        "glow-pulse": "glow-pulse 4s ease-in-out infinite",
+        "float-orb": "float-orb 12s ease-in-out infinite",
+        "float-orb-reverse": "float-orb-reverse 15s ease-in-out infinite",
+        "particle-drift": "particle-drift 20s linear infinite",
       },
     },
   },
