@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-import logoImage from "@/assets/fm-foundation-logo.jpg";
+import logoImage from "@/assets/fm-foundation-logo-new.jpg";
 import isuzuLogo from "@/assets/isuzu-logo.png";
 import davisShirtliffLogo from "@/assets/davis-shirtliff-logo.png";
 
@@ -27,17 +27,13 @@ const Footer = () => {
           
           {/* Organization Info - Takes more space */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="flex items-center gap-3">
+            <Link to="/" className="block">
               <img 
                 src={logoImage} 
-                alt="FM Foundation Logo" 
-                className="h-12 w-12 rounded-lg object-cover"
+                alt="Fednarnd Mlati Foundation" 
+                className="h-16 w-auto object-contain"
               />
-              <div>
-                <h3 className="font-bold text-lg tracking-tight">FMF Foundation</h3>
-                <p className="text-xs text-primary-foreground/70">Fednarnd Mlati Foundation</p>
-              </div>
-            </div>
+            </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed max-w-sm">
               Empowering communities through sustainable development, education, and environmental conservation across East Africa.
             </p>

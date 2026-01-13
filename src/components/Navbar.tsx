@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import fmFoundationLogo from "@/assets/fm-foundation-logo-optimized.png";
+import fmFoundationLogo from "@/assets/fm-foundation-logo-new.jpg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -24,13 +24,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <img
               src={fmFoundationLogo}
-              alt="Fednarnd Mlati Foundation Logo"
-              className="h-[35px] md:h-[60px] w-auto object-contain"
+              alt="Fednarnd Mlati Foundation"
+              className="h-10 md:h-14 w-auto object-contain"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
