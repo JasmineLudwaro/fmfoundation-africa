@@ -77,32 +77,60 @@ const About = () => {
         </div>
       </section>
 
-      {/* Core Values Detail */}
-      <section className="py-16">
+      {/* Core Values Section */}
+      <section className="py-20 bg-muted/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">Core Values</h2>
-          <div className="space-y-8">
-            <div className="bg-card rounded-lg p-8 shadow-card border-l-4 border-primary">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Integrity</h3>
-              <p className="text-muted-foreground">
-                We uphold transparency and accountability in all our initiatives, ensuring that every action 
-                we take is guided by honest principles and ethical standards.
-              </p>
-            </div>
-            <div className="bg-card rounded-lg p-8 shadow-card border-l-4 border-secondary">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Sustainability</h3>
-              <p className="text-muted-foreground">
-                We design and implement projects that ensure long-term community impact, focusing on solutions 
-                that will continue to benefit communities for generations to come.
-              </p>
-            </div>
-            <div className="bg-card rounded-lg p-8 shadow-card border-l-4 border-tertiary">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Empowerment</h3>
-              <p className="text-muted-foreground">
-                We strengthen individuals and communities to be self-reliant and resilient, providing tools 
-                and knowledge that enable lasting positive change.
-              </p>
-            </div>
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Core Values
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              The principles that guide every initiative we undertake
+            </p>
+            <div className="mt-4 mx-auto w-24 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary rounded-full" />
+          </div>
+          
+          {/* Values Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Integrity */}
+            <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-primary">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                  <span className="text-3xl">🎯</span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Integrity</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We uphold transparency and accountability in all our initiatives.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Sustainability */}
+            <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-secondary">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                  <span className="text-3xl">🌱</span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Sustainability</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We design and implement projects that ensure long-term community impact.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Empowerment */}
+            <Card className="bg-card shadow-card hover:shadow-primary transition-all duration-300 border-t-4 border-tertiary">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 bg-tertiary/10 rounded-xl flex items-center justify-center mb-6">
+                  <span className="text-3xl">💪</span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Empowerment</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  We strengthen individuals and communities to be self-reliant and resilient.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
