@@ -36,7 +36,7 @@ const Gallery = () => {
     },
     {
       src: galleryReliefSupplies,
-      alt: "Relief supplies ready for community distribution",
+      alt: "Sanitary Towels Distributed to Schools",
       category: "Community Support",
     },
   ];

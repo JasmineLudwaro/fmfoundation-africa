@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Eye, Target } from "lucide-react";
+
 
 const About = () => {
   return (
@@ -44,9 +44,6 @@ const About = () => {
             {/* Vision */}
             <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Eye className="h-8 w-8 text-primary-foreground" />
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   A transformed society where communities thrive through access to clean water, quality education, 
@@ -58,9 +55,6 @@ const About = () => {
             {/* Mission */}
             <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="h-8 w-8 text-secondary-foreground" />
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   To empower communities by providing sustainable water solutions, supporting educational initiatives, 
@@ -72,9 +66,6 @@ const About = () => {
             {/* Values Preview */}
             <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-8 w-8 text-tertiary-foreground" />
-                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Values</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Guided by integrity, sustainability, and empowerment - the core principles that drive 
