@@ -45,37 +45,69 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-hero min-h-[80vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 animate-pulse-slow">
+        {/* Animated Background Image */}
+        <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Modern tech background"
-            className="w-full h-full object-cover opacity-30 animate-float"
+            alt="Community development background"
+            className="w-full h-full object-cover opacity-25 animate-float"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 animate-gradient-shift"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-4">
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-medium animate-fade-in">
+        
+        {/* Animated Gradient Overlay */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary/20 to-secondary/30 animate-gradient-shift"
+          style={{ backgroundSize: '400% 400%' }}
+        />
+        
+        {/* Floating Orbs for Subtle Motion */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-glow/20 rounded-full blur-3xl animate-float-orb" />
+          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-float-orb-reverse" />
+          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-glow-pulse" />
+        </div>
+        
+        {/* Light Particles Effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
+          <div className="absolute w-2 h-2 bg-primary-foreground/60 rounded-full animate-particle-drift" style={{ left: '10%', animationDelay: '0s' }} />
+          <div className="absolute w-1.5 h-1.5 bg-primary-foreground/40 rounded-full animate-particle-drift" style={{ left: '25%', animationDelay: '3s' }} />
+          <div className="absolute w-2.5 h-2.5 bg-primary-foreground/50 rounded-full animate-particle-drift" style={{ left: '40%', animationDelay: '6s' }} />
+          <div className="absolute w-1 h-1 bg-primary-foreground/60 rounded-full animate-particle-drift" style={{ left: '60%', animationDelay: '9s' }} />
+          <div className="absolute w-2 h-2 bg-primary-foreground/30 rounded-full animate-particle-drift" style={{ left: '75%', animationDelay: '12s' }} />
+          <div className="absolute w-1.5 h-1.5 bg-primary-foreground/50 rounded-full animate-particle-drift" style={{ left: '90%', animationDelay: '15s' }} />
+        </div>
+        
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-primary/40" />
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* Organization Name - Prominent */}
+          <div className="text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground tracking-wide animate-fade-in">
               Fednarnd Mlati Foundation
-            </p>
+            </h2>
+            <div className="mt-3 mx-auto w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-primary-foreground/80 to-transparent animate-shimmer" style={{ backgroundSize: '200% 100%' }} />
           </div>
+          
+          {/* Tagline */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Empowering Minds,
               <br />
-              <span className="text-primary-glow">Enriching Communities</span>
+              <span className="text-primary-glow drop-shadow-lg">Enriching Communities</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto animate-fade-in">
+            <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto animate-fade-in leading-relaxed" style={{ animationDelay: '0.4s' }}>
               Building resilient communities through sustainable development, education, and environmental conservation across Kenya.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{ animationDelay: '0.6s' }}>
+              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90 shadow-lg hover:shadow-xl transition-all duration-300">
                 <Link to="/about">About Us</Link>
               </Button>
-              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90">
+              <Button size="lg" className="bg-background text-primary border border-primary hover:bg-background/90 shadow-lg hover:shadow-xl transition-all duration-300">
                 <Link to="/our-work">Our Work</Link>
               </Button>
-              <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow">
+              <Button size="lg" className="bg-background text-primary hover:bg-background/90 border border-primary shadow-glow hover:shadow-xl transition-all duration-300">
                 <Link to="/contact">Contact</Link>
               </Button>
             </div>
