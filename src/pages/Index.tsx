@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, Users, Droplets, TreePine, GraduationCap, Building2, Heart } from "lucide-react";
+import { ArrowRight, Users, Droplets, GraduationCap, Building2, Eye, Target } from "lucide-react";
 import heroImage from "@/assets/hero-animated-background.jpg";
 import educationImage from "@/assets/education-students.jpg";
 import treePlantingImage from "@/assets/tree-planting.jpg";
@@ -126,8 +126,8 @@ const Index = () => {
             {/* Vision */}
             <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-8 w-8 text-primary-foreground" />
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                  <Eye className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -140,8 +140,8 @@ const Index = () => {
             {/* Mission */}
             <Card className="text-center shadow-card hover:shadow-primary transition-all duration-300 animate-scale-in">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-8 w-8 text-secondary-foreground" />
+                <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+                  <Target className="w-7 h-7 text-secondary" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
